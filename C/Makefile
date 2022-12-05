@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -static -I shitcstd/include -nostdlib -Wall -m32 -march=i386 -fno-pie -fno-stack-protector -ffreestanding
+CFLAGS = -static -O3 -I shitcstd/include -nostdlib -Wall -m32 -march=i386 -fno-pie -fno-stack-protector -ffreestanding
 CLIBS = -Lshitcstd/build -lshitcstd
 
 all: bindir shitcstd/build/libshitcstd.a days
@@ -11,7 +11,7 @@ shitcstd/build/libshitcstd.a:
 	@mkdir -p shitcstd/build
 	@cd shitcstd/build && cmake .. && make
 
-days: day3.o
+days: day3.o day4.o
 
 %.o: %.c
 	@echo "-> compiling $<"
