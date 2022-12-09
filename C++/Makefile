@@ -3,7 +3,7 @@ CFLAGS = -O3
 
 all: days
 
-days: day5.o day6.o day7.o day8.o
+days: day5.o day6.o day7.o day8.o day9.o
 
 %.o: %.cpp
 	@echo "-> compiling $<"
