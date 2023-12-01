@@ -1,3 +1,3 @@
 [submodule "C/shitcstd"]
-	path = C/shitcstd
+	path = 2022/C/shitcstd
 	url = https://github.com/theverygaming/shitcstd.git
