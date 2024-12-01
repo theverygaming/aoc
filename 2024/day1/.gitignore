@@ -1,0 +1,4 @@
+*.o
+*.hi
+/day1
+/input.txt
