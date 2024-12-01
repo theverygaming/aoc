@@ -17,4 +17,8 @@ main = do
     --print listleft
     --print listright
     print (sum (map (\(a, b) -> abs (a - b)) (zip (sort listleft) (sort listright))))
+    print (sum (map (\a -> a * (count listright a)) listleft))
     hClose handle
+
+count :: [Int] -> Int -> Int
+count x val = length (filter (== val) x)
